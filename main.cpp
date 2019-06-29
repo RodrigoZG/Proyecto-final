@@ -1,8 +1,11 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "Tierra.h"
 
 int main() {
-
+    Tierra barranco(400,600);
+    barranco.adicionarObjeto(new Objeto("UTEC", 'B', 30, 30));
+    barranco.dibujarTierra();
     return 0;
 }
 
